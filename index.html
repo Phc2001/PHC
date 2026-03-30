@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Paracha Honey | 100% Pure Wild Honey – Chargulli Mountains</title>
+  <meta name="description" content="Experience the purest wild honey from Pakistan's Chargulli mountains. Lab-tested, organic, and ethically sourced. Free nationwide delivery.">
+  <meta name="keywords" content="pure honey Pakistan, wild honey Chargulli, organic honey, desi honey, Paracha Honey">
+  <link rel="canonical" href="https://parachahoney.com/">
+  <meta property="og:title" content="Paracha Honey – Pure Wild Honey from Chargulli">
+  <meta property="og:description" content="Experience the purest wild honey. Lab-tested, organic, ethically sourced. Order now.">
+  <meta property="og:image" content="500g.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="notification-bar" id="liveNotification">
+    <i class="fas fa-shopping-cart"></i> 12 people bought this in the last 24 hours • Karachi • Lahore • Islamabad
+  </div>
+
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fas fa-leaf"></i> Paracha Honey
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">✨ Premium Quality ✨</div>
+          <h1>100% Pure Wild Honey <br>from Chargulli Mountains</h1>
+          <p>Unfiltered, enzyme-rich, and lab-tested. Harvested by indigenous beekeepers in Pakistan's pristine northern regions. Taste the wilderness.</p>
+          <div class="hero-buttons">
+            <a href="#product" class="btn btn-primary">Shop Now <i class="fas fa-arrow-right"></i></a>
+            <a href="#benefits" class="btn btn-outline">Learn More</a>
+          </div>
+          <div class="hero-trust">
+            <span><i class="fas fa-check-circle"></i> 10,000+ Happy Customers</span>
+            <span><i class="fas fa-flask"></i> Lab Tested</span>
+            <span><i class="fas fa-truck"></i> Free Shipping > Rs.2500</span>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="500g.png" alt="Paracha Honey 500g Jar" loading="eager">
+          <div class="floating-badge">
+            <i class="fas fa-star"></i> 4.9 ★ (2,341)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section with Dynamic Variants -->
+    <section class="product-section" id="product">
+      <div class="container">
+        <div class="section-header">
+          <h2>Choose Your Perfect Jar</h2>
+          <p>Select the size that fits your lifestyle</p>
+        </div>
+        <div class="product-grid">
+          <div class="product-gallery">
+            <img src="500g.png" alt="Paracha Honey Jar" id="productImage">
+            <div class="gallery-thumbs">
+              <img src="250g.png" alt="250g jar" data-weight="250">
+              <img src="500g.png" alt="500g jar" data-weight="500" class="active">
+              <img src="1000g.png" alt="1kg jar" data-weight="1000">
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="rating">
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+              <span>4.9 out of 5 (2,341 reviews)</span>
+            </div>
+            <h3>Wild Mountain Honey</h3>
+            <p class="short-desc">Raw, unprocessed, with natural enzymes and pollen. Sourced from wild hives in Chargulli valley.</p>
+            <div class="price-box">
+              <span class="current-price" id="displayPrice">Rs. 2250</span>
+              <span class="old-price" id="oldPrice">Rs. 2750</span>
+              <span class="discount-tag" id="discountBadge">Save 18%</span>
+            </div>
+            <div class="per-gram">💡 <span id="perGramInfo">Rs. 4.50</span> per gram</div>
+            <div class="variants" id="variantGroup">
+              <button data-weight="250" data-price="1250" data-old="1499" data-stock="24">250g</button>
+              <button data-weight="500" data-price="2250" data-old="2750" data-stock="18" class="active">500g <span class="badge">Best Seller</span></button>
+              <button data-weight="1000" data-price="4200" data-old="5200" data-stock="9">1kg <span class="badge">Family Pack</span></button>
+            </div>
+            <div class="stock-status" id="stockAlert">
+              <i class="fas fa-check-circle"></i> In Stock: <span id="stockCount">18</span> units
+            </div>
+            <div class="qty-selector">
+              <button id="qtyMinus">-</button>
+              <span id="qtyValue">1</span>
+              <button id="qtyPlus">+</button>
+            </div>
+            <div class="total-price">Total: Rs. <span id="totalPrice">2250</span></div>
+            <div class="free-shipping-progress" id="shippingBar">
+              <i class="fas fa-truck"></i> <span id="shippingMsg">Add Rs. 250 more for FREE delivery</span>
+              <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            </div>
+            <button class="cta" id="orderNowBtn"><i class="fab fa-whatsapp"></i> Order on WhatsApp</button>
+            <div class="trust-badges">
+              <span><i class="fas fa-shield-alt"></i> 100% Authentic</span>
+              <span><i class="fas fa-credit-card"></i> COD Available</span>
+              <span><i class="fas fa-undo-alt"></i> 14-Day Returns</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Countdown Timer (Urgency) -->
+    <div class="countdown-wrapper">
+      <div class="container">
+        <div class="countdown-timer" id="countdownTimer">
+          <i class="fas fa-hourglass-half"></i> Flash Sale: 18% OFF ends in <span id="timer">02:00:00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Benefits / Features Section -->
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Our Honey is Different</h2>
+          <p>Beyond ordinary – pure, potent, and packed with nature’s goodness</p>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <i class="fas fa-mountain"></i>
+            <h3>Wild Sourced</h3>
+            <p>Harvested from remote mountain hives, untouched by modern agriculture.</p>
+          </div>
+          <div class="benefit-card">
+            <i class="fas fa-flask"></i>
+            <h3>Lab Tested</h3>
+            <p>Every batch tested for purity, HMF, diastase, and heavy metals.</p>
+          </div>
+          <div class="benefit-card">
+            <i class="fas fa-leaf"></i>
+            <h3>Raw & Unfiltered</h3>
+            <p>Retains natural pollen, enzymes, and antioxidants for maximum health benefits.</p>
+          </div>
+          <div class="benefit-card">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>Ethically Harvested</h3>
+            <p>Supporting local beekeepers and preserving natural habitats.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nutritional Facts & Certifications -->
+    <section class="nutrition">
+      <div class="container nutrition-grid">
+        <div class="nutrition-info">
+          <h2>Nutritional Powerhouse</h2>
+          <p>100g of our wild honey contains:</p>
+          <ul>
+            <li><strong>Energy:</strong> 304 kcal</li>
+            <li><strong>Carbohydrates:</strong> 82.4 g</li>
+            <li><strong>Natural Sugars:</strong> 78 g</li>
+            <li><strong>Antioxidants:</strong> High in flavonoids & phenolic acids</li>
+            <li><strong>Enzymes:</strong> Diastase & invertase active</li>
+          </ul>
+          <div class="cert-badges">
+            <span><i class="fas fa-certificate"></i> Halal Certified</span>
+            <span><i class="fas fa-medal"></i> GMP Facility</span>
+            <span><i class="fas fa-tractor"></i> Non-GMO</span>
+          </div>
+        </div>
+        <div class="nutrition-image">
+          <img src="500g.png" alt="Honeycomb">
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials with Avatars -->
+    <section class="testimonials" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Customers Say</h2>
+          <p>Join thousands of satisfied families</p>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-avatar"><img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Avatar"></div>
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"This honey is a game-changer! The taste is incredible and I feel healthier. Definitely the best honey in Pakistan."</p>
+            <h4>— Ayesha Khan, Lahore</h4>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-avatar"><img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Avatar"></div>
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Pure, thick, and authentic. I've tried many brands, but Paracha Honey stands out. Highly recommended!"</p>
+            <h4>— Bilal Ahmed, Karachi</h4>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-avatar"><img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Avatar"></div>
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Excellent service and premium quality. The 1kg pack lasted our family a month. Will order again."</p>
+            <h4>— Dr. Fatima, Islamabad</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog / Articles Section for SEO -->
+    <section class="blog">
+      <div class="container">
+        <div class="section-header">
+          <h2>From Our Blog</h2>
+          <p>Learn more about honey benefits and recipes</p>
+        </div>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <img src="https://placehold.co/400x250/FFDEA5/5a3e1f?text=Honey+Benefits" alt="Honey Benefits">
+            <h3>10 Health Benefits of Raw Wild Honey</h3>
+            <p>Discover how raw honey boosts immunity, improves digestion, and more.</p>
+            <a href="#">Read More →</a>
+          </div>
+          <div class="blog-card">
+            <img src="https://placehold.co/400x250/FFDEA5/5a3e1f?text=Honey+Recipes" alt="Honey Recipes">
+            <h3>Delicious Recipes Using Wild Honey</h3>
+            <p>From morning tea to savory glazes, get creative with honey.</p>
+            <a href="#">Read More →</a>
+          </div>
+          <div class="blog-card">
+            <img src="https://placehold.co/400x250/FFDEA5/5a3e1f?text=Sustainable+Honey" alt="Sustainable Honey">
+            <h3>How We Support Sustainable Beekeeping</h3>
+            <p>Our commitment to ethical sourcing and environmental conservation.</p>
+            <a href="#">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>Is your honey 100% pure?</h3>
+            <p>Yes, our honey is pure wild honey with no added sugars, syrups, or preservatives. Each batch is lab-tested.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do you ship nationwide?</h3>
+            <p>Absolutely. We deliver to all major cities in Pakistan via TCS/Leopards. Cash on delivery available.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Can I see the lab report?</h3>
+            <p>Of course. We share third-party lab reports upon request via WhatsApp.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What is the shelf life?</h3>
+            <p>Our honey has a shelf life of 2 years when stored in a cool, dry place away from direct sunlight.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter & Contact -->
+    <section class="newsletter" id="contact">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Stay Sweet with Us</h2>
+          <p>Get exclusive offers, honey tips, and wellness insights straight to your inbox.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="contact-info">
+            <p><i class="fab fa-whatsapp"></i> +92 312 5262317</p>
+            <p><i class="fas fa-envelope"></i> contact@parachahoney.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>Paracha Honey</h3>
+        <p>Bringing the purest wild honey from the mountains of Chargulli to your table.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fas fa-phone"></i> +92 312 5262317</li>
+          <li><i class="fas fa-envelope"></i> contact@parachahoney.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Paracha Honey Chargulli. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
