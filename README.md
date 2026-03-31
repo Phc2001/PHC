@@ -9,7 +9,7 @@ A **high‑conversion, single‑product e‑commerce landing page** for **Parach
 
 ## 🌟 Live Preview
 
-👉 **[View the live site on GitHub Pages](https://yourusername.github.io/paracha-honey-chargulli/)**  
+👉 **[View the live site on GitHub Pages]([https://yourusername.github.io/paracha-honey-chargulli/](https://phc2001.github.io/PHC/))**  
 *(Replace `yourusername` with your GitHub username after deployment)*
 
 ---
@@ -73,7 +73,6 @@ This landing page showcases **Paracha Honey Chargulli**, a pure, raw wild honey 
    - Push the repository to GitHub.
    - Go to **Settings → Pages**.
    - Select the branch (e.g., `main`) and root folder.
-   - Your site will be live at `https://yourusername.github.io/repo-name/`.
-4. Customize the WhatsApp number, pricing, or content as needed (all editable in the HTML).
+   - Your site will be live at `https://phc2001.github.io/PHC/`.
 
 
